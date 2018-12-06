@@ -2,7 +2,7 @@
 ## Overview:
 1. [Problem](README.md#problem)
 2. [Dataset](README.md#Dataset)
-3. [File_Descriptions](README.md#File_Descriptions)
+3. [File Descriptions](README.md#File-Descriptions)
 4. [LSUN/](README.md#LSUN)
 
 
@@ -54,7 +54,7 @@ The directory structure for your repo should look like this:
 ```
       
 
-# File_Descriptions: 
+# File Descriptions: 
 ## LSUN/
 ### LSUN/utils/LSUNDataloader.py
 This file defines the dataloader class, has class variable of a list of csvs saved, then has the get item attribute for a single image at once based on index, where the batch size is a variable defined in the code found in Baseline_vs_meta.ipynb, in which case the data loader would execute "get_item" that determined number of times.
