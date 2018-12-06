@@ -81,4 +81,11 @@ This file is the script with the python wrapper used to querey the Datastore
 This file outputs from Baseline_vs_metadata.ipynb with results
 
 ## Plugin/
+### Plugin/content.js
+### Plugin/jquery-3.3.1.min.js
+### Plugin/manifest.json
 
+### Plugin/popup.html
+### Plugin/popup.js
+### Plugin/script_deselect.php
+### Plugin/script_lasso.php
