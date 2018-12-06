@@ -81,5 +81,4 @@ This file is the script with the python wrapper used to querey the Datastore
 This file outputs from Baseline_vs_metadata.ipynb with results
 
 ## Plugin/
-### ActivationVisualization.ipynb
 
