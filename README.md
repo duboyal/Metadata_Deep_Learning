@@ -9,14 +9,56 @@
 
 ## Problem:
 
-A newspaper editor was researching immigration data trends on H1B(H-1B, H-1B1, E-3) visa application processing over the past years, trying to identify the occupations and states with the most number of approved H1B visas. She has found statistics available from the US Department of Labor and its [Office of Foreign Labor Certification Performance Data](https://www.foreignlaborcert.doleta.gov/performancedata.cfm#dis). But while there are ready-made reports for [2018](https://www.foreignlaborcert.doleta.gov/pdf/PerformanceData/2018/H-1B_Selected_Statistics_FY2018_Q4.pdf) and [2017](https://www.foreignlaborcert.doleta.gov/pdf/PerformanceData/2017/H-1B_Selected_Statistics_FY2017.pdf), the site doesn’t have them for past years. 
+When presented images on an interactive website, the user is asked to lasso-select images of a certain class of their choice, and then deselect images that do not belong to that class. We want to flag these deselected images as considered to be on the "decision boundary".  We want to see if signal from user metadata (these clicks and lasso selects of specific images) may be used to be fed into the model and improve the performance of the model. The first order of action is that we would upsample the de-selected images.
 
-This program provides a mechanism to analyze past years data, specificially calculate two metrics: **Top 10 Occupations** and **Top 10 States** for **certified** visa applications.
+## Dataset:
+The Data set is a subset of LSUN scene classifier. It is a data set of scenery in the form of interior rooms of a building or home. The class names we used in this project were 'bedroom, bridge','church','class','conference','dining','kitchen','living','restaurant', and'tower'.
 
 ## General Structure:
-The main program is saved in src as h1b_counting.py and this will be ran from the run.sh file on the top most level. the input can be found in the input directory and the output generated from h1b_counting.py will be saved in two files that can be found under the output directory. make sure when running that the paths to these files are indeed reflected in the run.sh file.
+The main program code would execute under the following file Baseline_vs_meta.ipynb
 
-## Input Datasets: 
+The directory structure for your repo should look like this:
+```
+      ├── LSUN
+      │     └──.ipynb_checkpoints
+      │     └──utils
+      │     │   └──LSUNDataloader.py
+      │     └──Baseline_vs_meta.ipynb
+      │     └──ConvertToTar.ipynb
+      │     └──Dummy.ipynb
+      │     └──ExperimentLog.csv
+      │     └──LSUNGetTrainValFiles.ipynb
+      │     └──LSUNResultsVisualization.ipynb
+      │     └──PreprocessingLSUN.ipynb
+      │     └──QueryDatastore.py
+      │     └──Results_LSUN.csv
+      ├── Plugin 
+      │     └──content.js
+      │     └──jquery-3.3.1.min.js	
+      │     └──manifest.json
+      │     └──popup.html
+      │     └──popup.js
+      │     └──script_deselect.php
+      │     └──script_lasso.php
+      ├── Plugin2
+      │     └──content.js
+      │     └──jquery-3.3.1.min.js	
+      │     └──manifest.json
+      │     └──popup.html
+      │     └──popup.js
+      │     └──script_deselect.php
+      │     └──script_lasso.php
+      ├── ActivationVisualization.ipynb
+      ├── README.md 
+      
+```
+      
+
+# File Descriptions: 
+## Input Datasets:
+
+
+
 
 Input is to be saved in our top level input directory as h1b_input.csv. If you download any of the raw data, save the file as such and place it in the input directory, then update the run.sh file to have ./input/h1b_input.csv as first argument.
 
@@ -51,33 +93,3 @@ The records in this file are sorted by __`NUMBER_CERTIFIED_APPLICATIONS`__ field
 
 
 
-
-### The Repo directory structure
-
-The directory structure for your repo should look like this:
-```
-      ├── README.md 
-      ├── run.sh
-      ├── src
-      │   └──h1b_counting.py
-      ├── input
-      │   └──h1b_input.csv
-      ├── output
-      |   └── top_10_occupations.txt
-      |   └── top_10_states.txt
-      ├── insight_testsuite
-          └── run_tests.sh
-          └── tests
-              └── test_1
-              |   ├── input
-              |   │   └── h1b_input.csv
-              |   |__ output
-              |   |   └── top_10_occupations.txt
-              |   |   └── top_10_states.txt
-              ├── your-own-test_1
-                  ├── input
-                  │   └── h1b_input.csv
-                  |── output
-                  |   |   └── top_10_occupations.txt
-                  |   |   └── top_10_states.txt
-```
