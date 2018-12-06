@@ -1,0 +1,7 @@
+Number,Experiment
+0,Baseline
+1,Metadata
+2,Baseline_Upsample
+3,Upsample_living_conf
+4,Upsample_conf
+5,Upsample_bridge

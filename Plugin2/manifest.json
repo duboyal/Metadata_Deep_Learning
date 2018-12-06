@@ -1,0 +1,20 @@
+{
+	"manifest_version" : 2,
+	"name" : "2Active Learning 2",
+	"description" : "Active Learning 2",
+	"browser_action": {
+			"default_title":"Active Learning 2",
+			"default_popup":"popup.html"
+	},
+	"version": "1",
+	"permissions": [
+		"http://localhost/*",
+		"https://platform-ai-dev.appspot.com/app/imageTraining/projects/*"
+	],
+	"content_scripts":[
+		{
+			"matches": ["https://platform-ai-dev.appspot.com/app/imageTraining/projects/*"],
+			"js":["jquery-3.3.1.min.js","content.js"]
+		}
+	]
+}
