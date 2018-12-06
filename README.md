@@ -56,6 +56,10 @@ The directory structure for your repo should look like this:
       
 
 # File Descriptions: 
+## ./
+### ./ActivationVisualization.ipynb
+This is a nice visulaization of performing t-sne (similar to Principal component analysis) to see how well the model is able to seperate out the different classes. This is also very integral in showing us how likely the user is to pick up other 'classes' when trying to only select one class. in this case we encourage the user to select a small amount of classes at once when they are "lassoing" images
+
 ## LSUN/
 ### LSUN/utils/LSUNDataloader.py
 This file defines the dataloader class, has class variable of a list of csvs saved, then has the get item attribute for a single image at once based on index, where the batch size is a variable defined in the code found in Baseline_vs_meta.ipynb, in which case the data loader would execute "get_item" that determined number of times.
@@ -75,8 +79,7 @@ This file outputs from Baseline_vs_metadata.ipynb with experiment details
 This file is the script with the python wrapper used to querey the Datastore
 ### LSUN/Results_LSUN.csv
 This file outputs from Baseline_vs_metadata.ipynb with results
-### ActivationVisualization.ipynb
-This is a nice visulaization of performing t-sne (similar to Principal component analysis) to see how well the model is able to seperate out the different classes. This is also very integral in showing us how likely the user is to pick up other 'classes' when trying to only select one class. in this case we encourage the user to select a small amount of classes at once when they are "lassoing" images
-## Plugin/
 
+## Plugin/
+### ActivationVisualization.ipynb
 
