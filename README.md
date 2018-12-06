@@ -62,11 +62,11 @@ This file defines the dataloader class, has class variable of a list of csvs sav
 This file is where the main network training happens and also communicates with the data loader. 
 
 ### LSUN/ConvertToTar.ipynb 
-converts entire directory to a tar file to be easily puished to github
+converts entire directory to a tar file to be easily pushed to github
 ### LSUN/Dummy.ipynb
 performs the resampling with designated ratios of desired classes and outputs a new upsampled train.csv file
 ### LSUN/PreprocessingLSUN.ipynb
-This file maps the lassoed and deselceted images to its links and classes 
+This file maps the lassoed and deselceted images to its url_links and classes, because the metadata of "deselect" and "lasso" are of course, attatched to specific images from website, that we need to keep of in order to know which ones to upsample in our training data set.  
 ### LSUN/ExperimentLog.csv
 This file outputs from Baseline_vs_metadata.ipynb with experiment details
 ### LSUN/QueryDatastore.py
