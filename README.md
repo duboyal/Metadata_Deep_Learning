@@ -56,8 +56,23 @@ The directory structure for your repo should look like this:
 # File Descriptions: 
 
 ### LSUN/utils/LSUNDataloader.py
-this is 
+This file defines the dataloader class, has class variable of a list of csvs saved, then has the get item attribute for a single image at once based on index, where the batch size is a variable defined in the code found in Baseline_vs_meta.ipynb, in which case the data loader would execute "get_item" that determined number of times.
 
+### LSUN/Baseline_vs_meta.ipynb
+This file is where the main network training happens and also communicates with the data loader. 
+
+### LSUN/ConvertToTar.ipynb 
+converts entire directory to a tar file to be easily puished to github
+### LSUN/Dummy.ipynb
+performs the resampling with designated ratios of desired classes and outputs a new upsampled train.csv file
+### LSUN/PreprocessingLSUN.ipynb
+This file maps the lassoed and deselceted images to its links and classes 
+### LSUN/ExperimentLog.csv
+This file outputs from Baseline_vs_metadata.ipynb with experiment details
+### LSUN/QueryDatastore.py
+This file is the script with the python wrapper used to querey the Datastore
+### LSUN/Results_LSUN.csv
+This file outputs from Baseline_vs_metadata.ipynb with results 
 
 
 
