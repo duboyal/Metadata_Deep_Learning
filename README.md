@@ -72,7 +72,9 @@ This file outputs from Baseline_vs_metadata.ipynb with experiment details
 ### LSUN/QueryDatastore.py
 This file is the script with the python wrapper used to querey the Datastore
 ### LSUN/Results_LSUN.csv
-This file outputs from Baseline_vs_metadata.ipynb with results 
+This file outputs from Baseline_vs_metadata.ipynb with results
+### ActivationVisualization.ipynb
+This is a nice visulaization of performing t-sne (similar to Principal component analysis) to see how well the model is able to seperate out the different classes. This is also very integral in showing us how likely the user is to pick up other 'classes' when trying to only select one class. in this case we encourage the user to select a small amount of classes at once when they are "lassoing" images
 
 
 
