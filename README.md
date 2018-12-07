@@ -15,6 +15,15 @@ When presented images on an interactive website, the user is asked to lasso-sele
 ## Dataset:
 The Data set is a subset of LSUN scene classifier. It is a data set of scenery in the form of interior rooms of a building or home. The class names we used in this project were 'bedroom, bridge','church','class','conference','dining','kitchen','living','restaurant', and'tower'.
 
+The datasets website and information:
+http://lsun.cs.princeton.edu/2017/
+
+Instructions on how to download the dataset:
+https://github.com/fyu/lsun
+
+personally what I did was download the 10 classes induvidually then upload them to the Google cloud gpu instance. But, I used a script to only dowload 100,000 images, 10 images of each. 
+
+
 ## General Structure:
 The main program code would execute under the following file Baseline_vs_meta.ipynb
 
