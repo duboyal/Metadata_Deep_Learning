@@ -82,10 +82,16 @@ This file outputs from Baseline_vs_metadata.ipynb with results
 
 ## Plugin/
 ### Plugin/content.js
+this is a file that performs the search for the existence of a button that comes into existence once images are lassoed or selected. searches with Event listener, obtains lassoed and selected images and sends it to the server with the xmlHttp object. 
 ### Plugin/jquery-3.3.1.min.js
+necessary to implement jquery
 ### Plugin/manifest.json
-
+calls jquery and browser action and specifies the webpages
 ### Plugin/popup.html
+ jquery-3.3.1.min.js and popup.js
 ### Plugin/popup.js
+execute in chrome
 ### Plugin/script_deselect.php
+php script for deselcet function
 ### Plugin/script_lasso.php
+php script for lasso function
