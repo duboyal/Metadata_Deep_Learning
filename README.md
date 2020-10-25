@@ -1,4 +1,4 @@
-# Deep Learning with Metadata
+# Improving a Deep Learning with scraped User-Metadata
 ## Overview:
 1. [Problem](README.md#problem)
 2. [Dataset](README.md#Dataset)
